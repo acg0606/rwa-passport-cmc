@@ -1,0 +1,13 @@
+import {mkdir,writeFile} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+import {expandedPassports,expandedResearchDate} from '../src/data/expanded-passports.js';
+const folder=new URL('../public/research/',import.meta.url);
+await mkdir(folder,{recursive:true});
+const sources=[...new Map(expandedPassports.flatMap(p=>p.sources).map(s=>[s.url,s])).values()];
+const ledger={schemaVersion:1,reviewedAt:expandedResearchDate,scope:'Eight researched additions to RWA Passport; dated public documents, not a live reserve audit.',sourceCount:sources.length,assets:expandedPassports};
+await writeFile(new URL('passports.json',folder),JSON.stringify(ledger,null,2)+'\n');
+const headers=['Token','CMC ID','Research status','Instrument','Reference asset','Issuer or platform','Disclosed backing','Named custody','Holder rights or conversion','Open points','Reviewed','Primary source'];
+const rows=expandedPassports.map(p=>[p.symbol,p.id,p.research.status,p.research.facets.instrument.value,p.research.facets.reference.value,p.research.facets.issuer.value,p.research.facets.backing.value,p.research.facets.custody.value,p.research.facets.rights.value,p.research.gaps.join(' | '),p.reviewedAt,p.sources[0].url]);
+const escape=value=>`"${String(value).replaceAll('"','""')}"`;
+await writeFile(new URL('matrix.csv',folder),'\uFEFF'+[headers,...rows].map(row=>row.map(escape).join(',')).join('\r\n')+'\r\n');
+console.log(`Research export: ${expandedPassports.length} dossiers, ${sources.length} unique primary sources → ${fileURLToPath(folder)}`);

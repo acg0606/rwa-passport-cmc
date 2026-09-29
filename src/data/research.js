@@ -1,3 +1,4 @@
+import {expandedPassports} from './expanded-passports.js';
 export const checkedAt = '2026-09-13';
 export const usgs2026 = 'https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-gold.pdf';
 export const usgs2025 = 'https://pubs.usgs.gov/periodicals/mcs2025/mcs2025-gold.pdf';
@@ -73,7 +74,10 @@ export const passports = [
     ],
     events:[],
   },
+  ...expandedPassports,
 ];
+
+export const hasResearch = asset => Array.isArray(asset?.sources) && asset.sources.length > 0;
 
 export function passportFor(coin) {
   const curated = passports.find(p=>p.id===coin.id);

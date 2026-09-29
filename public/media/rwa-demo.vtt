@@ -1,35 +1,49 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:09.000
-RWA Passport connects CMC market data to the evidence behind each asset.
+00:00:00.000 --> 00:00:06.000
+An illustrated field guide connects CMC market data to the evidence behind each asset.
 
 2
-00:00:09.000 --> 00:00:19.000
-Production is separate from custody: USGS data describes mined gold. not
-token reserves.
+00:00:06.000 --> 00:00:13.000
+Explore declared custody and source documents. Regional statements remain attributed to
+their sources.
 
 3
-00:00:19.000 --> 00:00:29.000
-Inspect the issuer. token. reference asset and source behind each attributed
-relationship.
+00:00:13.000 --> 00:00:20.000
+Switch to sourced production figures. Country mine output is separate from token custody.
 
 4
-00:00:29.000 --> 00:00:39.000
-Play the 2023â€“2025 production history. Every frame retains units. sources
-and estimate flags.
+00:00:20.000 --> 00:00:30.000
+Play the 2023–2025 production history. Units, source vintages and estimate flags stay
+visible.
 
 5
-00:00:39.000 --> 00:00:50.000
-The CMC category is fully scanned. Unresearched tokens keep explicit
-unknowns.
+00:00:30.000 --> 00:00:36.000
+Eleven dossiers now connect market observations to sources. This observed Top 10 includes
+one partially documented asset.
 
 6
-00:00:50.000 --> 00:00:58.000
-The CMC calls run on the server. API keys stay out of the browser and
-repository.
+00:00:36.000 --> 00:00:44.000
+STRCX tracks preferred stock. Select a relationship to inspect its source, date and legal
+context; named custodians are not reserve-location pins.
 
 7
-00:00:58.000 --> 00:01:07.000
-A real authenticated response: timestamp. full coverage and a downloadable
-provider receipt.
+00:00:44.000 --> 00:00:51.000
+Compare six sourced relationships in the evidence matrix. Tokens referencing Circle can
+have different issuers, instruments and rights.
+
+8
+00:00:51.000 --> 00:00:58.000
+USDon remains partially documented. Its settlement mechanism is sourced; legal issuer,
+account-level custody and recovery rights remain unresolved.
+
+9
+00:00:58.000 --> 00:01:04.000
+The mobile layout keeps research status visible and makes the detailed evidence matrix
+horizontally scrollable.
+
+10
+00:01:04.000 --> 00:01:11.000
+Inspect the real API response: live keyed data, a complete category scan and dated
+observations.

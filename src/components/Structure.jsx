@@ -2,8 +2,13 @@ import {useMemo,useState} from 'react';
 import {ArrowSquareOut,Graph,MapPin,FileText} from '@phosphor-icons/react';
 import {Chart} from './Chart.jsx';
 import {atlasPalette as palette,atlasUiFont} from '../lib/atlas-theme.js';
+import EvidenceDossier from './EvidenceDossier.jsx';
 
 export default function Structure({asset,onLocate,reducedMotion}) {
+  return asset.research?.facets?<EvidenceDossier asset={asset} reducedMotion={reducedMotion}/>:<LegacyStructure asset={asset} onLocate={onLocate} reducedMotion={reducedMotion}/>;
+}
+
+function LegacyStructure({asset,onLocate,reducedMotion}) {
   const [active,setActive]=useState('token');
   const location=asset.custody||asset.origin;
   const nodes=useMemo(()=>[
@@ -18,6 +23,7 @@ export default function Structure({asset,onLocate,reducedMotion}) {
   const links=[{source:'issuer',target:'token',name:researched?'issuer statement':'not researched'},{source:'token',target:'reference',name:researched?'references':'not researched'},{source:'reference',target:'place',name:location?(asset.custody?'declared custody':'company context'):'unknown location'},{source:'source',target:'token',name:researched?'documents':'evidence needed'},{source:'source',target:'place',name:location?'location statement':'evidence needed'},{source:'token',target:'markets',name:asset.slug?'directory':'not researched'}];
   const option=useMemo(()=>({animation:!reducedMotion,aria:{enabled:true},tooltip:{show:false},series:[{type:'graph',layout:'none',roam:false,left:90,right:95,top:85,bottom:75,data:nodes.map(n=>({...n,symbol:'roundRect',symbolSize:n.id==='token'?[150,76]:n.id==='source'?[128,64]:[172,64],itemStyle:{color:n.id===active?palette.tealWash:palette.panel,borderColor:n.id===active?palette.ink:'#91a594',borderWidth:1.5,shadowColor:'#becab966',shadowBlur:0,shadowOffsetX:3,shadowOffsetY:3},label:{show:true,color:palette.ink,fontFamily:'Georgia, serif',fontWeight:n.id==='token'?700:400,fontSize:n.id==='token'?22:14}})),links:links.map(l=>({...l,label:{show:true,formatter:l.name,opacity:1,color:palette.muted,fontFamily:atlasUiFont,fontSize:11}})),edgeSymbol:['none','arrow'],edgeSymbolSize:7,lineStyle:{color:'#638c86',opacity:1,width:1.5,curveness:.015},emphasis:{focus:'adjacency'}}]}),[nodes,active,reducedMotion]);
   const selected=nodes.find(n=>n.id===active)||nodes[1];
+  if(!researched) return <section className="structure-section" aria-labelledby="structure-heading"><div className="section-heading"><div><h2 id="structure-heading">What this passport still needs.</h2><p>{asset.symbol} is a CMC market listing. Its evidence graph has not been researched.</p></div><span className="status-chip"><FileText/> Research pending</span></div><div className="research-checklist"><article><span>01</span><h3>Issuer & reference asset</h3><p>Review the official product documents and identify the entity responsible for the instrument.</p></article><article><span>02</span><h3>Rights & backing</h3><p>Read the instrument terms and supporting reports before describing ownership or reserve claims.</p></article><article><span>03</span><h3>Custody & geography</h3><p>Find dated location disclosures. Keep unavailable details unknown.</p></article></div><p className="fine-print">No issuer, backing or location relationships are drawn until supporting sources are reviewed. A market listing does not establish those relationships.</p>{asset.slug&&<a className="text-action" href={`https://coinmarketcap.com/currencies/${asset.slug}/#Markets`} target="_blank" rel="noreferrer">Explore available token markets <ArrowSquareOut/></a>}</section>;
   return <section className="structure-section" aria-labelledby="structure-heading">
     <div className="section-heading"><div><h2 id="structure-heading">Understand the connection.</h2><p>Every relationship has a meaning. Every claim needs a source.</p></div><span className="status-chip"><Graph size={15}/> Evidence graph</span></div>
     <p className="graph-hint">On a narrow screen, scroll the diagram sideways. All nodes can also be selected below.</p>

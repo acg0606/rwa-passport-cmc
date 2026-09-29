@@ -1,0 +1,958 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-29",
+  "scope": "Eight researched additions to RWA Passport; dated public documents, not a live reserve audit.",
+  "sourceCount": 12,
+  "assets": [
+    {
+      "id": 39711,
+      "symbol": "STRCX",
+      "name": "Strategy PP Variable xStock",
+      "slug": "strategy-pp-variable-tokenized-stock-xstock",
+      "documentSymbol": "STRCx",
+      "isin": "CH1500008482",
+      "category": "Tokenized preferred equity",
+      "family": "equity",
+      "color": "#a6c79c",
+      "reference": "Strategy Series A variable-rate perpetual preferred stock",
+      "issuer": "Backed Assets (JE) Limited",
+      "reviewedAt": "2026-09-29",
+      "legalLink": "A collateralized tracker certificate with creditor rights under the product terms. It does not confer direct shareholder voting rights.",
+      "description": "Follow the preferred share behind this tracker.",
+      "origin": {
+        "id": "USA-TYSONS",
+        "name": "Tysons Corner, United States",
+        "country": "United States",
+        "lat": 38.92,
+        "lng": -77.23,
+        "precision": "City context",
+        "kind": "Reference-company address",
+        "statement": "The final terms give a Strategy reference-company address in Tysons Corner, Virginia. This city marker does not locate securities accounts or the company’s operating assets.",
+        "source": "https://sppdownloaddocumentservice.l-p-a.com/api/DownloadDocument/UPI/CH1500008482/BF%20Final%20Terms%20AND%20Summary%20%28PDF%29",
+        "sourceDate": "2026-05-08"
+      },
+      "sources": [
+        {
+          "id": "strcx-terms",
+          "label": "STRCx final terms",
+          "publisher": "Backed Assets (JE) Limited",
+          "url": "https://sppdownloaddocumentservice.l-p-a.com/api/DownloadDocument/UPI/CH1500008482/BF%20Final%20Terms%20AND%20Summary%20%28PDF%29",
+          "publishedAt": "2026-05-08",
+          "reviewedAt": "2026-09-29",
+          "kind": "Product final terms",
+          "claim": "Identifies the issuer, STRC underlying, collateral and service providers."
+        },
+        {
+          "id": "xstocks-legal",
+          "label": "xStocks legal structure",
+          "publisher": "xStocks",
+          "url": "https://docs.xstocks.fi/docs/product-legal-overview",
+          "publishedAt": null,
+          "reviewedAt": "2026-09-29",
+          "kind": "Issuer documentation",
+          "claim": "Explains tracker certificates, collateral segregation and the security agent."
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-05-08",
+          "title": "STRCx final terms dated",
+          "summary": "The reviewed terms identify STRC as the underlying and describe the certificate’s collateral and rights.",
+          "url": "https://sppdownloaddocumentservice.l-p-a.com/api/DownloadDocument/UPI/CH1500008482/BF%20Final%20Terms%20AND%20Summary%20%28PDF%29",
+          "kind": "Product document"
+        }
+      ],
+      "research": {
+        "status": "DOCUMENTED",
+        "reviewedAt": "2026-09-29",
+        "summary": "STRC is preferred stock. The token is a separate tracker certificate; it is not MSTR common stock.",
+        "facets": {
+          "issuer": {
+            "label": "Token issuer",
+            "value": "Backed Assets (JE) Limited",
+            "shortLabel": "Backed Assets\n(JE) Limited",
+            "detail": "The named issuer is a Jersey company, distinct from the company issuing the referenced share.",
+            "sourceId": "strcx-terms",
+            "section": "Cover; Part A",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "instrument": {
+            "label": "Instrument",
+            "value": "Open-ended tracker certificate",
+            "shortLabel": "Tracker\ncertificate",
+            "detail": "STRCx · ISIN CH1500008482. The certificate tracks the underlying subject to its terms and adjustments.",
+            "sourceId": "strcx-terms",
+            "section": "Part A 1.1; Terms I",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "reference": {
+            "label": "Reference asset",
+            "value": "Strategy Series A variable-rate perpetual preferred stock (STRC)",
+            "shortLabel": "STRC\nPreferred share",
+            "detail": "Underlying ISIN US5949728530. The underlying is Strategy’s Series A variable-rate perpetual preferred stock.",
+            "sourceId": "strcx-terms",
+            "section": "Part A 1.2",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "backing": {
+            "label": "Disclosed collateral",
+            "value": "STRC underlying securities",
+            "shortLabel": "STRC shares\nCollateral",
+            "detail": "The terms designate the underlying as standard collateral and permit lending of underlyings. Current holdings are not audited here.",
+            "sourceId": "strcx-terms",
+            "section": "Part A 1.2–1.3; Terms IV",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "custody": {
+            "label": "Named custodians",
+            "value": "Alpaca Securities; InCore Bank; Maerki Baumann",
+            "shortLabel": "Alpaca · InCore\nMaerki Baumann",
+            "detail": "The terms list these providers using alternatives. They do not establish the current allocation among providers. Office addresses are not reserve locations.",
+            "sourceId": "strcx-terms",
+            "section": "Part A 1.1, Custodian(s)",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "rights": {
+            "label": "Holder rights",
+            "value": "Creditor rights; no shareholder vote",
+            "shortLabel": "Creditor\nrights",
+            "detail": "The legal overview describes economic exposure without shareholder voting rights; a security agent represents collateral interests. Product terms govern recovery.",
+            "sourceId": "xstocks-legal",
+            "section": "Legal classification; safeguarding",
+            "status": "ISSUER_STATEMENT"
+          }
+        },
+        "gaps": [
+          "Current collateral quantities and allocation by custodian are not independently verified.",
+          "Read the base prospectus and supplements together with these dated final terms."
+        ]
+      }
+    },
+    {
+      "id": 40213,
+      "symbol": "CRCLB",
+      "name": "Circle Internet Group bStocks",
+      "slug": "circle-internet-group-tokenized-bstocks",
+      "isin": "AE000A4AU3B0",
+      "category": "Tokenized equity certificate",
+      "family": "equity",
+      "color": "#b5aac6",
+      "reference": "Circle Internet Group common stock",
+      "issuer": "BTech Holdings Ltd",
+      "reviewedAt": "2026-09-29",
+      "legalLink": "A certificate representing a beneficial interest in disclosed share backing. Holders do not receive direct shareholder voting rights.",
+      "description": "Trace the certificate to its disclosed share backing.",
+      "origin": {
+        "id": "ARE-ADGM",
+        "name": "Abu Dhabi, United Arab Emirates",
+        "country": "United Arab Emirates",
+        "lat": 24.45,
+        "lng": 54.38,
+        "precision": "City context",
+        "kind": "Issuer jurisdiction",
+        "statement": "The prospectus identifies the certificate issuer as an ADGM company with a registered address in Abu Dhabi. This marker locates issuer jurisdiction, not the underlying company or the custody of its shares.",
+        "source": "https://www.adgm.com/globalassets/market-disclosure/content/prospectus/btech-holdings-prospectus----11-june---circle-internet-group-bstocks_06_11_2026_16-36-41.pdf",
+        "sourceDate": "2026-06-11"
+      },
+      "sources": [
+        {
+          "id": "crclb-prospectus",
+          "label": "CRCLB prospectus",
+          "publisher": "BTech Holdings · ADGM publication",
+          "url": "https://www.adgm.com/globalassets/market-disclosure/content/prospectus/btech-holdings-prospectus----11-june---circle-internet-group-bstocks_06_11_2026_16-36-41.pdf",
+          "publishedAt": "2026-06-11",
+          "reviewedAt": "2026-09-29",
+          "kind": "Regulator-hosted issuer prospectus",
+          "claim": "Identifies CRCL share backing, Alpaca custody and certificate-holder rights. Publication by a regulator is not a guarantee of backing."
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-06-11",
+          "title": "CRCLB prospectus dated",
+          "summary": "The reviewed prospectus describes certificates over CRCL shares and the issuer’s service-provider arrangements.",
+          "url": "https://www.adgm.com/globalassets/market-disclosure/content/prospectus/btech-holdings-prospectus----11-june---circle-internet-group-bstocks_06_11_2026_16-36-41.pdf",
+          "kind": "Issuer prospectus"
+        }
+      ],
+      "research": {
+        "status": "DOCUMENTED",
+        "reviewedAt": "2026-09-29",
+        "summary": "CRCLB is issued by BTech. Its reference is CRCL shares; the underlying company does not issue this token.",
+        "facets": {
+          "issuer": {
+            "label": "Token issuer",
+            "value": "BTech Holdings Ltd",
+            "shortLabel": "BTech\nHoldings Ltd",
+            "detail": "ADGM company 36283, incorporated on 17 April 2026; a separate certificate issuer.",
+            "sourceId": "crclb-prospectus",
+            "section": "Cover; 2.1",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "instrument": {
+            "label": "Instrument",
+            "value": "Certificate over shares",
+            "shortLabel": "Share-backed\ncertificate",
+            "detail": "CRCLB · ISIN AE000A4AU3B0. The prospectus describes a beneficial interest in underlying shares.",
+            "sourceId": "crclb-prospectus",
+            "section": "Definitions; 3.1",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "reference": {
+            "label": "Reference asset",
+            "value": "Circle Internet Group common stock (CRCL)",
+            "shortLabel": "CRCL\nCommon share",
+            "detail": "The prospectus identifies the referenced share. This is not ownership of particular facilities, cash reserves or other company property.",
+            "sourceId": "crclb-prospectus",
+            "section": "Cover; definition of Underlying",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "backing": {
+            "label": "Disclosed collateral",
+            "value": "CRCL shares, 1:1 certificate entitlement",
+            "shortLabel": "CRCL shares\n1:1 entitlement",
+            "detail": "Shares are credited to the issuer’s segregated custody account. The 1:1 arrangement is disclosed in the document, not audited here.",
+            "sourceId": "crclb-prospectus",
+            "section": "Definitions; 3.1",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "custody": {
+            "label": "Named custodian",
+            "value": "Alpaca Securities LLC",
+            "shortLabel": "Alpaca\nSecurities",
+            "detail": "Alpaca is the underlying-share custodian and broker. Binance NCCL maintains the certificate title ledger; these are different roles.",
+            "sourceId": "crclb-prospectus",
+            "section": "Definitions: Alpaca, Custodian, CSD",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "rights": {
+            "label": "Holder rights",
+            "value": "Beneficial interest; no direct shareholder vote",
+            "shortLabel": "Beneficial\ninterest",
+            "detail": "Share redemption uses the documented account and agent process. Cash dividends are reinvested through the multiplier rather than paid directly.",
+            "sourceId": "crclb-prospectus",
+            "section": "3.2",
+            "status": "DOCUMENTED_TERMS"
+          }
+        },
+        "gaps": [
+          "Current share balances, token supply reconciliation and custody-account statements are not independently verified.",
+          "Eligibility and redemption remain subject to the prospectus and platform procedures."
+        ]
+      }
+    },
+    {
+      "id": 37003,
+      "symbol": "MSTRX",
+      "name": "Strategy xStock",
+      "slug": "microstrategy-tokenized-stock-xstock",
+      "documentSymbol": "MSTRx",
+      "isin": "CH1436219633",
+      "category": "Tokenized equity",
+      "family": "equity",
+      "color": "#a6c79c",
+      "reference": "Strategy common stock",
+      "issuer": "Backed Assets (JE) Limited",
+      "reviewedAt": "2026-09-29",
+      "legalLink": "A collateralized tracker certificate with creditor rights under the product terms. It does not confer direct shareholder voting rights.",
+      "description": "Follow the share exposure through the issuing instrument.",
+      "origin": {
+        "id": "USA-TYSONS",
+        "name": "Tysons Corner, United States",
+        "country": "United States",
+        "lat": 38.92,
+        "lng": -77.23,
+        "precision": "City context",
+        "kind": "Reference-company address",
+        "statement": "The final terms give a Strategy reference-company address in Tysons Corner, Virginia. This city marker does not locate securities accounts or the company’s operating assets.",
+        "source": "https://sppdownloaddocumentservice.l-p-a.com/api/DownloadDocument/UPI/CH1436219633/BF%20Final%20Terms%20AND%20Summary%20%28PDF%29",
+        "sourceDate": "2026-05-08"
+      },
+      "sources": [
+        {
+          "id": "mstrx-terms",
+          "label": "MSTRx final terms",
+          "publisher": "Backed Assets (JE) Limited",
+          "url": "https://sppdownloaddocumentservice.l-p-a.com/api/DownloadDocument/UPI/CH1436219633/BF%20Final%20Terms%20AND%20Summary%20%28PDF%29",
+          "publishedAt": "2026-05-08",
+          "reviewedAt": "2026-09-29",
+          "kind": "Product final terms",
+          "claim": "Identifies the issuer, MSTR underlying, collateral and service providers."
+        },
+        {
+          "id": "xstocks-legal",
+          "label": "xStocks legal structure",
+          "publisher": "xStocks",
+          "url": "https://docs.xstocks.fi/docs/product-legal-overview",
+          "publishedAt": null,
+          "reviewedAt": "2026-09-29",
+          "kind": "Issuer documentation",
+          "claim": "Explains tracker certificates, collateral segregation and the security agent."
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-05-08",
+          "title": "MSTRx final terms dated",
+          "summary": "The reviewed terms identify MSTR as the underlying and describe the certificate’s collateral and rights.",
+          "url": "https://sppdownloaddocumentservice.l-p-a.com/api/DownloadDocument/UPI/CH1436219633/BF%20Final%20Terms%20AND%20Summary%20%28PDF%29",
+          "kind": "Product document"
+        }
+      ],
+      "research": {
+        "status": "DOCUMENTED",
+        "reviewedAt": "2026-09-29",
+        "summary": "The reference is a company share. The certificate does not give ownership of particular company assets.",
+        "facets": {
+          "issuer": {
+            "label": "Token issuer",
+            "value": "Backed Assets (JE) Limited",
+            "shortLabel": "Backed Assets\n(JE) Limited",
+            "detail": "The named issuer is a Jersey company, distinct from the company issuing the referenced share.",
+            "sourceId": "mstrx-terms",
+            "section": "Cover; Part A",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "instrument": {
+            "label": "Instrument",
+            "value": "Open-ended tracker certificate",
+            "shortLabel": "Tracker\ncertificate",
+            "detail": "MSTRx · ISIN CH1436219633. The certificate tracks the underlying subject to its terms and adjustments.",
+            "sourceId": "mstrx-terms",
+            "section": "Part A 1.1; Terms I",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "reference": {
+            "label": "Reference asset",
+            "value": "Strategy common stock (MSTR)",
+            "shortLabel": "MSTR\nCommon share",
+            "detail": "Underlying ISIN US5949724083. The underlying is common stock, not direct ownership of the company’s property.",
+            "sourceId": "mstrx-terms",
+            "section": "Part A 1.2",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "backing": {
+            "label": "Disclosed collateral",
+            "value": "MSTR underlying securities",
+            "shortLabel": "MSTR shares\nCollateral",
+            "detail": "The terms designate the underlying as standard collateral and permit lending of underlyings. Current holdings are not audited here.",
+            "sourceId": "mstrx-terms",
+            "section": "Part A 1.2–1.3; Terms IV",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "custody": {
+            "label": "Named custodians",
+            "value": "Alpaca Securities; InCore Bank; Maerki Baumann",
+            "shortLabel": "Alpaca · InCore\nMaerki Baumann",
+            "detail": "The terms list these providers using alternatives. They do not establish the current allocation among providers. Office addresses are not reserve locations.",
+            "sourceId": "mstrx-terms",
+            "section": "Part A 1.1, Custodian(s)",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "rights": {
+            "label": "Holder rights",
+            "value": "Creditor rights; no shareholder vote",
+            "shortLabel": "Creditor\nrights",
+            "detail": "The legal overview describes economic exposure without shareholder voting rights; a security agent represents collateral interests. Product terms govern recovery.",
+            "sourceId": "xstocks-legal",
+            "section": "Legal classification; safeguarding",
+            "status": "ISSUER_STATEMENT"
+          }
+        },
+        "gaps": [
+          "Current collateral quantities and allocation by custodian are not independently verified.",
+          "Read the base prospectus and supplements together with these dated final terms."
+        ]
+      }
+    },
+    {
+      "id": 38056,
+      "symbol": "CRCLon",
+      "name": "Circle Internet Group Tokenized Stock (Ondo)",
+      "slug": "circle-internet-group-tokenized-stock-ondo",
+      "isin": "VGG7001AAD69",
+      "category": "Tokenized equity note",
+      "family": "equity",
+      "color": "#9fc6bd",
+      "reference": "Circle Internet Group common stock",
+      "issuer": "Ondo Global Markets (BVI) Limited",
+      "reviewedAt": "2026-09-29",
+      "legalLink": "A structured debt note tracking total return. It does not confer shareholder voting or information rights.",
+      "description": "The Circle share, through an Ondo debt instrument.",
+      "origin": {
+        "id": "USA-NYC",
+        "name": "New York, United States",
+        "country": "United States",
+        "lat": 40.71,
+        "lng": -74.01,
+        "precision": "City context",
+        "kind": "Reference-company address",
+        "statement": "The product document identifies Circle Internet Group at One World Trade Center, New York. This is company-address context, not the location of token collateral or USDC reserves.",
+        "source": "https://www.lb.lt/uploads/prospectuses/docs/62702_27aa32fbbbab06b72927b9cdedf6890a.pdf",
+        "sourceDate": "2025-11-11"
+      },
+      "sources": [
+        {
+          "id": "crclon-terms",
+          "label": "CRCLon final terms",
+          "publisher": "Ondo · Bank of Lithuania publication",
+          "url": "https://www.lb.lt/uploads/prospectuses/docs/62702_27aa32fbbbab06b72927b9cdedf6890a.pdf",
+          "publishedAt": "2025-11-11",
+          "reviewedAt": "2026-09-29",
+          "kind": "Regulator-hosted final terms",
+          "claim": "Identifies the Circle reference, total-return tracking, issuer and named service providers."
+        },
+        {
+          "id": "ondo-legal",
+          "label": "Ondo legal structure",
+          "publisher": "Ondo",
+          "url": "https://docs.ondo.finance/ondo-stocks/legal-and-regulatory",
+          "publishedAt": null,
+          "reviewedAt": "2026-09-29",
+          "kind": "Issuer documentation",
+          "claim": "Describes the structured note, security interest and absence of shareholder rights."
+        }
+      ],
+      "events": [
+        {
+          "date": "2025-11-11",
+          "title": "CRCLon final terms dated",
+          "summary": "The reviewed final terms describe a total-return debt instrument referencing Circle shares.",
+          "url": "https://www.lb.lt/uploads/prospectuses/docs/62702_27aa32fbbbab06b72927b9cdedf6890a.pdf",
+          "kind": "Product document"
+        }
+      ],
+      "research": {
+        "status": "DOCUMENTED",
+        "reviewedAt": "2026-09-29",
+        "summary": "CRCLon references Circle shares through an Ondo note. It is distinct from the CRCLX and CRCLB instruments.",
+        "facets": {
+          "issuer": {
+            "label": "Token issuer",
+            "value": "Ondo Global Markets (BVI) Limited",
+            "shortLabel": "Ondo Global\nMarkets (BVI)",
+            "detail": "The named issuer is a BVI company. Tokenholder obligations and rights are governed by the applicable offering terms.",
+            "sourceId": "crclon-terms",
+            "section": "Cover; Parties to the series",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "instrument": {
+            "label": "Instrument",
+            "value": "Structured debt note / total-return tracker",
+            "shortLabel": "Total-return\ndebt note",
+            "detail": "CRCLon · ISIN VGG7001AAD69. Reinvested income can change the number of shares represented by each token.",
+            "sourceId": "crclon-terms",
+            "section": "Part A: Manner of Tracking",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "reference": {
+            "label": "Reference asset",
+            "value": "Circle Internet Group common stock (CRCL)",
+            "shortLabel": "CRCL\nCommon share",
+            "detail": "Underlying ISIN US1725731079; the same reference share does not make different issuers’ tokens interchangeable.",
+            "sourceId": "crclon-terms",
+            "section": "Information concerning the underlying",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "backing": {
+            "label": "Disclosed collateral",
+            "value": "Underlying securities and cash in transit",
+            "shortLabel": "Shares + cash\nin transit",
+            "detail": "Ondo describes matching security backing plus a buffer and a first-priority security interest for tokenholders. This is a published claim, not our audit.",
+            "sourceId": "ondo-legal",
+            "section": "Legal structure",
+            "status": "ISSUER_STATEMENT"
+          },
+          "custody": {
+            "label": "Named custodians",
+            "value": "Alpaca Securities; BitGo Trust Company",
+            "shortLabel": "Alpaca + BitGo\nNamed in terms",
+            "detail": "The dated terms name both providers; they do not establish current allocation. Ankura is named as security and verification agent.",
+            "sourceId": "crclon-terms",
+            "section": "Parties: Custodians, Security Agent",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "rights": {
+            "label": "Holder rights",
+            "value": "Value redemption; no shareholder vote",
+            "shortLabel": "Value-redemption\nrights",
+            "detail": "Ondo describes redemption for the value of the underlying, subject to terms, without the underlying company’s voting or information rights.",
+            "sourceId": "ondo-legal",
+            "section": "Tokenholder ownership and rights",
+            "status": "ISSUER_STATEMENT"
+          }
+        },
+        "gaps": [
+          "Current collateral balances and allocation between service providers are not independently verified.",
+          "The reviewed final terms are dated 11 November 2025; subsequent supplements and current offering materials also matter."
+        ]
+      }
+    },
+    {
+      "id": 40217,
+      "symbol": "SPCXB",
+      "name": "SpaceX bStocks",
+      "slug": "spacex-tokenized-bstocks",
+      "isin": "AE000A4AVAW6",
+      "category": "Tokenized equity certificate",
+      "family": "equity",
+      "color": "#b5aac6",
+      "reference": "Space Exploration Technologies common stock",
+      "issuer": "BTech Holdings Ltd",
+      "reviewedAt": "2026-09-29",
+      "legalLink": "A certificate representing a beneficial interest in disclosed share backing. Holders do not receive direct shareholder voting rights.",
+      "description": "Trace the certificate to its disclosed share backing.",
+      "origin": {
+        "id": "ARE-ADGM",
+        "name": "Abu Dhabi, United Arab Emirates",
+        "country": "United Arab Emirates",
+        "lat": 24.45,
+        "lng": 54.38,
+        "precision": "City context",
+        "kind": "Issuer jurisdiction",
+        "statement": "The prospectus identifies the certificate issuer as an ADGM company with a registered address in Abu Dhabi. This marker locates issuer jurisdiction, not the underlying company or the custody of its shares.",
+        "source": "https://www.adgm.com/globalassets/market-disclosure/content/prospectus/btech-holdings-prospectus---12-june-2026---spacex-bstocks_06_12_2026_17-32-11.pdf",
+        "sourceDate": "2026-06-12"
+      },
+      "sources": [
+        {
+          "id": "spcxb-prospectus",
+          "label": "SPCXB prospectus",
+          "publisher": "BTech Holdings · ADGM publication",
+          "url": "https://www.adgm.com/globalassets/market-disclosure/content/prospectus/btech-holdings-prospectus---12-june-2026---spacex-bstocks_06_12_2026_17-32-11.pdf",
+          "publishedAt": "2026-06-12",
+          "reviewedAt": "2026-09-29",
+          "kind": "Regulator-hosted issuer prospectus",
+          "claim": "Identifies SPCX share backing, Alpaca custody and certificate-holder rights. Publication by a regulator is not a guarantee of backing."
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-06-12",
+          "title": "SPCXB prospectus dated",
+          "summary": "The reviewed prospectus describes certificates over SPCX shares and the issuer’s service-provider arrangements.",
+          "url": "https://www.adgm.com/globalassets/market-disclosure/content/prospectus/btech-holdings-prospectus---12-june-2026---spacex-bstocks_06_12_2026_17-32-11.pdf",
+          "kind": "Issuer prospectus"
+        }
+      ],
+      "research": {
+        "status": "DOCUMENTED",
+        "reviewedAt": "2026-09-29",
+        "summary": "SPCXB is issued by BTech. Its reference is SPCX shares; the underlying company does not issue this token.",
+        "facets": {
+          "issuer": {
+            "label": "Token issuer",
+            "value": "BTech Holdings Ltd",
+            "shortLabel": "BTech\nHoldings Ltd",
+            "detail": "ADGM company 36283, incorporated on 17 April 2026; a separate certificate issuer.",
+            "sourceId": "spcxb-prospectus",
+            "section": "Cover; 2.1",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "instrument": {
+            "label": "Instrument",
+            "value": "Certificate over shares",
+            "shortLabel": "Share-backed\ncertificate",
+            "detail": "SPCXB · ISIN AE000A4AVAW6. The prospectus describes a beneficial interest in underlying shares.",
+            "sourceId": "spcxb-prospectus",
+            "section": "Definitions; 3.1",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "reference": {
+            "label": "Reference asset",
+            "value": "Space Exploration Technologies common stock (SPCX)",
+            "shortLabel": "SPCX\nCommon share",
+            "detail": "The prospectus identifies the referenced share. This is not ownership of particular facilities, cash reserves or other company property.",
+            "sourceId": "spcxb-prospectus",
+            "section": "Cover; definition of Underlying",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "backing": {
+            "label": "Disclosed collateral",
+            "value": "SPCX shares, 1:1 certificate entitlement",
+            "shortLabel": "SPCX shares\n1:1 entitlement",
+            "detail": "Shares are credited to the issuer’s segregated custody account. The 1:1 arrangement is disclosed in the document, not audited here.",
+            "sourceId": "spcxb-prospectus",
+            "section": "Definitions; 3.1",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "custody": {
+            "label": "Named custodian",
+            "value": "Alpaca Securities LLC",
+            "shortLabel": "Alpaca\nSecurities",
+            "detail": "Alpaca is the underlying-share custodian and broker. Binance NCCL maintains the certificate title ledger; these are different roles.",
+            "sourceId": "spcxb-prospectus",
+            "section": "Definitions: Alpaca, Custodian, CSD",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "rights": {
+            "label": "Holder rights",
+            "value": "Beneficial interest; no direct shareholder vote",
+            "shortLabel": "Beneficial\ninterest",
+            "detail": "Share redemption uses the documented account and agent process. Cash dividends are reinvested through the multiplier rather than paid directly.",
+            "sourceId": "spcxb-prospectus",
+            "section": "3.2",
+            "status": "DOCUMENTED_TERMS"
+          }
+        },
+        "gaps": [
+          "Current share balances, token supply reconciliation and custody-account statements are not independently verified.",
+          "Eligibility and redemption remain subject to the prospectus and platform procedures."
+        ]
+      }
+    },
+    {
+      "id": 40536,
+      "symbol": "MSTRB",
+      "name": "Strategy bStocks",
+      "slug": "strategy-tokenized-bstocks",
+      "isin": "AE000A4AU3A2",
+      "category": "Tokenized equity certificate",
+      "family": "equity",
+      "color": "#b5aac6",
+      "reference": "Strategy common stock",
+      "issuer": "BTech Holdings Ltd",
+      "reviewedAt": "2026-09-29",
+      "legalLink": "A certificate representing a beneficial interest in disclosed share backing. Holders do not receive direct shareholder voting rights.",
+      "description": "Trace the certificate to its disclosed share backing.",
+      "origin": {
+        "id": "ARE-ADGM",
+        "name": "Abu Dhabi, United Arab Emirates",
+        "country": "United Arab Emirates",
+        "lat": 24.45,
+        "lng": 54.38,
+        "precision": "City context",
+        "kind": "Issuer jurisdiction",
+        "statement": "The prospectus identifies the certificate issuer as an ADGM company with a registered address in Abu Dhabi. This marker locates issuer jurisdiction, not the underlying company or the custody of its shares.",
+        "source": "https://www.adgm.com/globalassets/market-disclosure/content/prospectus/btech-holdings-prospectus---strategy-bstocks_06_23_2026_09-00-54.pdf",
+        "sourceDate": "2026-06-22"
+      },
+      "sources": [
+        {
+          "id": "mstrb-prospectus",
+          "label": "MSTRB prospectus",
+          "publisher": "BTech Holdings · ADGM publication",
+          "url": "https://www.adgm.com/globalassets/market-disclosure/content/prospectus/btech-holdings-prospectus---strategy-bstocks_06_23_2026_09-00-54.pdf",
+          "publishedAt": "2026-06-22",
+          "reviewedAt": "2026-09-29",
+          "kind": "Regulator-hosted issuer prospectus",
+          "claim": "Identifies MSTR share backing, Alpaca custody and certificate-holder rights. Publication by a regulator is not a guarantee of backing."
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-06-22",
+          "title": "MSTRB prospectus dated",
+          "summary": "The reviewed prospectus describes certificates over MSTR shares and the issuer’s service-provider arrangements.",
+          "url": "https://www.adgm.com/globalassets/market-disclosure/content/prospectus/btech-holdings-prospectus---strategy-bstocks_06_23_2026_09-00-54.pdf",
+          "kind": "Issuer prospectus"
+        }
+      ],
+      "research": {
+        "status": "DOCUMENTED",
+        "reviewedAt": "2026-09-29",
+        "summary": "MSTRB is issued by BTech. Its reference is MSTR shares; the underlying company does not issue this token.",
+        "facets": {
+          "issuer": {
+            "label": "Token issuer",
+            "value": "BTech Holdings Ltd",
+            "shortLabel": "BTech\nHoldings Ltd",
+            "detail": "ADGM company 36283, incorporated on 17 April 2026; a separate certificate issuer.",
+            "sourceId": "mstrb-prospectus",
+            "section": "Cover; 2.1",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "instrument": {
+            "label": "Instrument",
+            "value": "Certificate over shares",
+            "shortLabel": "Share-backed\ncertificate",
+            "detail": "MSTRB · ISIN AE000A4AU3A2. The prospectus describes a beneficial interest in underlying shares.",
+            "sourceId": "mstrb-prospectus",
+            "section": "Definitions; 3.1",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "reference": {
+            "label": "Reference asset",
+            "value": "Strategy common stock (MSTR)",
+            "shortLabel": "MSTR\nCommon share",
+            "detail": "The prospectus identifies the referenced share. This is not ownership of particular facilities, cash reserves or other company property.",
+            "sourceId": "mstrb-prospectus",
+            "section": "Cover; definition of Underlying",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "backing": {
+            "label": "Disclosed collateral",
+            "value": "MSTR shares, 1:1 certificate entitlement",
+            "shortLabel": "MSTR shares\n1:1 entitlement",
+            "detail": "Shares are credited to the issuer’s segregated custody account. The 1:1 arrangement is disclosed in the document, not audited here.",
+            "sourceId": "mstrb-prospectus",
+            "section": "Definitions; 3.1",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "custody": {
+            "label": "Named custodian",
+            "value": "Alpaca Securities LLC",
+            "shortLabel": "Alpaca\nSecurities",
+            "detail": "Alpaca is the underlying-share custodian and broker. Binance NCCL maintains the certificate title ledger; these are different roles.",
+            "sourceId": "mstrb-prospectus",
+            "section": "Definitions: Alpaca, Custodian, CSD",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "rights": {
+            "label": "Holder rights",
+            "value": "Beneficial interest; no direct shareholder vote",
+            "shortLabel": "Beneficial\ninterest",
+            "detail": "Share redemption uses the documented account and agent process. Cash dividends are reinvested through the multiplier rather than paid directly.",
+            "sourceId": "mstrb-prospectus",
+            "section": "3.2",
+            "status": "DOCUMENTED_TERMS"
+          }
+        },
+        "gaps": [
+          "Current share balances, token supply reconciliation and custody-account statements are not independently verified.",
+          "Eligibility and redemption remain subject to the prospectus and platform procedures.",
+          "The prospectus uses different settlement-currency wording in its definitions and securities summary; no single currency is asserted here."
+        ]
+      }
+    },
+    {
+      "id": 38273,
+      "symbol": "USDon",
+      "name": "Ondo U.S. Dollar Token",
+      "slug": "us-dollar-tokenized-currency-ondo",
+      "category": "USD settlement token",
+      "family": "cash",
+      "color": "#b9c99b",
+      "reference": "U.S. dollar cash or equivalents",
+      "issuer": "Ondo Stocks (platform attribution)",
+      "reviewedAt": "2026-09-29",
+      "legalLink": "Published documentation describes a USD-backed settlement token. Standalone USDon legal-issuer and recovery terms were not established by the public materials reviewed.",
+      "description": "Trace the settlement token to the published cash-backing mechanism.",
+      "sources": [
+        {
+          "id": "usdon-mechanism",
+          "label": "USDon backing and conversion",
+          "publisher": "Ondo",
+          "url": "https://docs.ondo.finance/ondo-stocks/investing-and-redeeming.md",
+          "publishedAt": null,
+          "reviewedAt": "2026-09-29",
+          "kind": "Platform documentation",
+          "claim": "Describes dollar cash or equivalents, the stablecoin swapper and its access/liquidity limits."
+        },
+        {
+          "id": "usdon-addresses",
+          "label": "Official token addresses",
+          "publisher": "Ondo",
+          "url": "https://docs.ondo.finance/addresses",
+          "publishedAt": null,
+          "reviewedAt": "2026-09-29",
+          "kind": "Contract directory",
+          "claim": "Identifies USDon separately from USDY and the stock tokens."
+        },
+        {
+          "id": "usdon-contracts",
+          "label": "Settlement contract documentation",
+          "publisher": "Ondo",
+          "url": "https://docs.ondo.finance/api-reference/smart-contracts",
+          "publishedAt": null,
+          "reviewedAt": "2026-09-29",
+          "kind": "Technical documentation",
+          "claim": "Describes USDon in the GMTokenManager mint and redemption flow."
+        }
+      ],
+      "events": [],
+      "research": {
+        "status": "PARTIAL",
+        "reviewedAt": "2026-09-29",
+        "issuerRole": "Platform attribution",
+        "issuerEdge": "operates platform",
+        "summary": "USDon is a cash-settlement token. Its documented mechanism is researched; standalone legal-issuer and recovery terms remain unresolved.",
+        "facets": {
+          "issuer": {
+            "label": "Platform / legal issuer",
+            "value": "Ondo Stocks; legal issuer unresolved",
+            "shortLabel": "Ondo Stocks\nPlatform",
+            "detail": "The public docs call USDon the platform’s native stablecoin. They do not establish its separate legal-issuer terms in this review.",
+            "sourceId": "usdon-mechanism",
+            "section": "Forms of payment",
+            "status": "PARTIAL"
+          },
+          "instrument": {
+            "label": "Instrument",
+            "value": "USD settlement token",
+            "shortLabel": "USD settlement\ntoken",
+            "detail": "The official contract directory identifies USDon as the token used for swaps into and out of Ondo Stocks. It is a different token from USDY.",
+            "sourceId": "usdon-addresses",
+            "section": "Ondo Stocks / USDon",
+            "status": "ISSUER_STATEMENT"
+          },
+          "reference": {
+            "label": "Reference asset",
+            "value": "U.S. dollar value",
+            "shortLabel": "U.S. dollar",
+            "detail": "The documented unit is dollar value, rather than a company share.",
+            "sourceId": "usdon-mechanism",
+            "section": "Forms of payment",
+            "status": "ISSUER_STATEMENT"
+          },
+          "backing": {
+            "label": "Disclosed backing",
+            "value": "Cash or equivalents at an Ondo Stocks brokerage account",
+            "shortLabel": "USD cash\nor equivalents",
+            "detail": "Ondo states that each USDon has one dollar of cash or equivalents in a brokerage account. No account-level balance is verified here.",
+            "sourceId": "usdon-mechanism",
+            "section": "Forms of payment",
+            "status": "ISSUER_STATEMENT"
+          },
+          "custody": {
+            "label": "Custody detail",
+            "value": "Brokerage account; provider allocation unresolved",
+            "shortLabel": "Brokerage account\nProvider unresolved",
+            "detail": "The reviewed USDon-specific text does not identify the account-level custodian or jurisdiction. Custodians from equity-note terms are not automatically assigned to USDon.",
+            "sourceId": "usdon-mechanism",
+            "section": "Forms of payment",
+            "status": "PARTIAL"
+          },
+          "rights": {
+            "label": "Conversion / legal rights",
+            "value": "1:1 swap mechanism; legal recovery unresolved",
+            "shortLabel": "USDon ↔ USDC\nConditional swap",
+            "detail": "Docs describe 1:1 swaps subject to available swapper liquidity and whitelisting. This mechanism does not establish unconditional redemption or insolvency rights.",
+            "sourceId": "usdon-mechanism",
+            "section": "Forms of payment; Redeeming",
+            "status": "PARTIAL"
+          }
+        },
+        "gaps": [
+          "A USDon-specific legal-issuer document and insolvency/recovery terms were not established in the public sources reviewed.",
+          "The account-level custodian, jurisdiction and live balances remain unverified.",
+          "USDC conversion depends on whitelist access and swapper liquidity; no universal instant-redemption promise is made."
+        ]
+      }
+    },
+    {
+      "id": 37005,
+      "symbol": "CRCLX",
+      "name": "Circle xStock",
+      "slug": "circle-tokenized-stock-xstock",
+      "documentSymbol": "CRCLx",
+      "isin": "CH1436219773",
+      "category": "Tokenized equity",
+      "family": "equity",
+      "color": "#a6c79c",
+      "reference": "Circle Internet Group common stock",
+      "issuer": "Backed Assets (JE) Limited",
+      "reviewedAt": "2026-09-29",
+      "legalLink": "A collateralized tracker certificate with creditor rights under the product terms. It does not confer direct shareholder voting rights.",
+      "description": "Follow the share exposure through the issuing instrument.",
+      "origin": {
+        "id": "USA-NYC",
+        "name": "New York, United States",
+        "country": "United States",
+        "lat": 40.71,
+        "lng": -74.01,
+        "precision": "City context",
+        "kind": "Reference-company address",
+        "statement": "The product document identifies Circle Internet Group at One World Trade Center, New York. This is company-address context, not the location of token collateral or USDC reserves.",
+        "source": "https://sppdownloaddocumentservice.l-p-a.com/api/DownloadDocument/UPI/CH1436219773/BF%20Final%20Terms%20AND%20Summary%20%28PDF%29",
+        "sourceDate": "2026-05-08"
+      },
+      "sources": [
+        {
+          "id": "crclx-terms",
+          "label": "CRCLx final terms",
+          "publisher": "Backed Assets (JE) Limited",
+          "url": "https://sppdownloaddocumentservice.l-p-a.com/api/DownloadDocument/UPI/CH1436219773/BF%20Final%20Terms%20AND%20Summary%20%28PDF%29",
+          "publishedAt": "2026-05-08",
+          "reviewedAt": "2026-09-29",
+          "kind": "Product final terms",
+          "claim": "Identifies the issuer, CRCL underlying, collateral and service providers."
+        },
+        {
+          "id": "xstocks-legal",
+          "label": "xStocks legal structure",
+          "publisher": "xStocks",
+          "url": "https://docs.xstocks.fi/docs/product-legal-overview",
+          "publishedAt": null,
+          "reviewedAt": "2026-09-29",
+          "kind": "Issuer documentation",
+          "claim": "Explains tracker certificates, collateral segregation and the security agent."
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-05-08",
+          "title": "CRCLx final terms dated",
+          "summary": "The reviewed terms identify CRCL as the underlying and describe the certificate’s collateral and rights.",
+          "url": "https://sppdownloaddocumentservice.l-p-a.com/api/DownloadDocument/UPI/CH1436219773/BF%20Final%20Terms%20AND%20Summary%20%28PDF%29",
+          "kind": "Product document"
+        }
+      ],
+      "research": {
+        "status": "DOCUMENTED",
+        "reviewedAt": "2026-09-29",
+        "summary": "The reference is a company share. The certificate does not give ownership of particular company assets.",
+        "facets": {
+          "issuer": {
+            "label": "Token issuer",
+            "value": "Backed Assets (JE) Limited",
+            "shortLabel": "Backed Assets\n(JE) Limited",
+            "detail": "The named issuer is a Jersey company, distinct from the company issuing the referenced share.",
+            "sourceId": "crclx-terms",
+            "section": "Cover; Part A",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "instrument": {
+            "label": "Instrument",
+            "value": "Open-ended tracker certificate",
+            "shortLabel": "Tracker\ncertificate",
+            "detail": "CRCLx · ISIN CH1436219773. The certificate tracks the underlying subject to its terms and adjustments.",
+            "sourceId": "crclx-terms",
+            "section": "Part A 1.1; Terms I",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "reference": {
+            "label": "Reference asset",
+            "value": "Circle Internet Group common stock (CRCL)",
+            "shortLabel": "CRCL\nCommon share",
+            "detail": "Underlying ISIN US1725731079. The underlying is common stock, not direct ownership of the company’s property.",
+            "sourceId": "crclx-terms",
+            "section": "Part A 1.2",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "backing": {
+            "label": "Disclosed collateral",
+            "value": "CRCL underlying securities",
+            "shortLabel": "CRCL shares\nCollateral",
+            "detail": "The terms designate the underlying as standard collateral and permit lending of underlyings. Current holdings are not audited here.",
+            "sourceId": "crclx-terms",
+            "section": "Part A 1.2–1.3; Terms IV",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "custody": {
+            "label": "Named custodians",
+            "value": "Alpaca Securities; InCore Bank; Maerki Baumann",
+            "shortLabel": "Alpaca · InCore\nMaerki Baumann",
+            "detail": "The terms list these providers using alternatives. They do not establish the current allocation among providers. Office addresses are not reserve locations.",
+            "sourceId": "crclx-terms",
+            "section": "Part A 1.1, Custodian(s)",
+            "status": "DOCUMENTED_TERMS"
+          },
+          "rights": {
+            "label": "Holder rights",
+            "value": "Creditor rights; no shareholder vote",
+            "shortLabel": "Creditor\nrights",
+            "detail": "The legal overview describes economic exposure without shareholder voting rights; a security agent represents collateral interests. Product terms govern recovery.",
+            "sourceId": "xstocks-legal",
+            "section": "Legal classification; safeguarding",
+            "status": "ISSUER_STATEMENT"
+          }
+        },
+        "gaps": [
+          "Current collateral quantities and allocation by custodian are not independently verified.",
+          "Read the base prospectus and supplements together with these dated final terms."
+        ]
+      }
+    }
+  ]
+}

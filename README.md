@@ -13,7 +13,7 @@ RWA Passport joins CoinMarketCap market observations to source-backed research a
 
 The explorer edition brings the project artwork into the working interface: an illustrated cover, paper surfaces, ink-framed controls, an evidence diagram and history charts in one shared palette. All map selections, source links, category rankings, unknown states and history controls remain real interactive components. The decorative landscape is AI-generated imaginary geography, separate from the Natural Earth basemap and attributed research.
 
-The public app keeps the same URL. The 67-second video documents the original interface and the same core interactions. The current interactive app shows the updated visual edition.
+The public app keeps the same URL. The refreshed 71-second walkthrough shows the illustrated explorer, sourced gold context and history, the expanded research library, source-linked graphs, the evidence matrix, partial USDon research, mobile layout and the real API response. It combines actual browser captures from this release session, with English captions. Values remain observations at the displayed timestamps.
 
 ## Try it
 
@@ -21,7 +21,8 @@ The public app keeps the same URL. The 67-second video documents the original in
 2. Switch to Origin & production. The globe now shows USGS gold production, explicitly separated from the origin of token reserves.
 3. Open Structure and select relationship nodes to inspect their meaning and source.
 4. Open History, play the 2023–2025 production series, choose a year manually or open the numeric table.
-5. Change Top 3 to Top 10. The current CMC category determines the ranking; new, unresearched assets retain explicit unknowns. Search NVDAx to compare tokenized equity with gold.
+5. Change Top 3 to Top 10. The current CMC category determines the ranking. Use the research-library selector to open any of the 11 dossiers, including those outside the ranking.
+6. Open STRCX, CRCLB, MSTRX, CRCLon, SPCXB, MSTRB, USDon or CRCLX. In Structure, select a graph node or arrow to read its source, or switch to Evidence matrix. Download the comparison and full research ledger. USDon retains partial-evidence labels where public documentation does not establish its legal issuer, account-level custody or recovery rights.
 
 ## CMC integration
 
@@ -52,13 +53,17 @@ pnpm test
 pnpm proof
 ```
 
-The local server is http://127.0.0.1:4317. `pnpm build` packages static assets in `dist/client` and a bundled production Worker in `dist/server/index.js`. Supply `CMC_API_KEY` as a secret runtime binding on the hosting platform. The Worker caches snapshots using the platform Cache API; this cache is best-effort and region-local, so long-term market history is not guaranteed. The local Node adapter stores observations in ignored `.cache/` files.
+The local server is http://127.0.0.1:4317. `pnpm build` generates the research CSV/JSON from the same data used by the interface, then packages static assets in `dist/client` and a bundled production Worker in `dist/server/index.js`. Supply `CMC_API_KEY` as a secret runtime binding on the hosting platform. The Worker caches snapshots using the platform Cache API; this cache is best-effort and region-local, so long-term market history is not guaranteed. The local Node adapter stores observations in ignored `.cache/` files.
 
-Tests cover ranking completeness and freshness, missing values, duplicate IDs, geography semantics, historical units, rate-limit cooldowns, secret isolation, Worker API routing, cross-instance cache restoration, and stale-data behavior. `pnpm proof` makes real provider calls and is intentionally separate from deterministic tests.
+Tests cover ranking completeness and freshness, missing values, duplicate IDs, geography semantics, historical units, rate-limit cooldowns, secret isolation, Worker API routing, cross-instance cache restoration, stale-data behavior, and research integrity. Research checks keep preferred/common shares and different issuers separate, resolve every graph relationship to a source, preserve partial legal claims and prevent company or custodian office addresses from becoming reserve-location pins. `pnpm proof` makes real provider calls and is intentionally separate from deterministic tests.
 
 ## Evidence and limits
 
-Initial researched passports: **PAXG, XAUt, NVDAx**. Other category members show “Not researched.” Issuer claims are attributed, not independently audited. Location precision stays at the disclosed country/region/city level. Country production does not prove reserve provenance. Company headquarters do not locate token custody. Exchange listings do not reveal buyers' countries.
+The library has **11 dossiers**: the original **PAXG, XAUt and NVDAx**, plus **STRCX, CRCLB, MSTRX, CRCLon, SPCXB, MSTRB, USDon and CRCLX**, reviewed on 29 September 2026. The eight additions use **12 distinct primary sources**, with six source-linked research facets per asset: issuer/platform, instrument, reference, backing, custody and rights/conversion. Seven additions have product-specific final terms or prospectuses. **USDon is partially documented**: its published settlement mechanism is established, while a standalone legal-issuer document, account-level custodian and legal recovery rights were not established from the public materials reviewed. Do not extend equity-note terms to it by association.
+
+The graph and matrix distinguish documented terms, published claims and partial evidence. The source inspector displays the original document date, section and review date. [The comparison CSV](public/research/matrix.csv) and [full JSON ledger](public/research/passports.json) are generated from the dossiers. The original three keep their existing source dates and are not silently re-dated by this expansion.
+
+A separate counter reports coverage for the currently displayed CMC entries, including partial dossiers. A changed ranking can introduce assets without research; these show **Market data only**, available market values and a research checklist. Coverage is not independent verification of backing. Issuer claims are attributed, not audited. Current collateral quantities and allocations among named providers remain unverified. Location precision stays at the disclosed country/region/city level. Country production does not prove reserve provenance. Company and issuer addresses do not locate token custody. Exchange listings do not reveal buyers' countries. No reserve-location pins are inferred from the named financial custodians in the eight new dossiers.
 
 Gold production: [USGS 2025](https://pubs.usgs.gov/periodicals/mcs2025/mcs2025-gold.pdf) for 2023, and [USGS 2026](https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-gold.pdf) for revised 2024 and estimated 2025. Units, vintage, estimate flags and the rounded world denominator are preserved. The historical custody disclosure for XAUt remains dated 2020, not presented as a current vault audit.
 

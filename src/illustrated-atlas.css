@@ -120,3 +120,65 @@ footer .brand span{font-family:Georgia,'Times New Roman',serif;font-size:20px}
 @media(max-width:600px){.cover-layout{grid-template-columns:minmax(0,1fr)}.cover-copy{min-width:0}.cover-copy h1{font-size:clamp(42px,14.5vw,65px)}}
 .cover-copy,.inspector,.graph-wrap,.graph-keyboard,.history-chart-block,.history-notes,.graph-explanation,.methodology{background-image:url('/assets/atlas-paper-v2.png');background-size:768px 512px}
 .icon-button,.map-tools button,select,.country-options button,.graph-keyboard button,.segmented button,.asset-tabs button[aria-pressed=true]{background-image:url('/assets/atlas-paper-v2.png');background-size:500px 333px;background-blend-mode:multiply}
+.research-coverage{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:center;padding:22px 28px;background:#eef0e2;border-top:1px solid #acb8a9}
+.research-eyebrow{display:flex;align-items:center;gap:7px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#466b67}
+.research-coverage h2{font:24px/1.15 Georgia,serif;margin:8px 0;color:var(--ink)}
+.research-coverage p{max-width:76ch;font-size:12px;line-height:1.6;color:var(--muted);margin:0}
+.research-shortcuts{display:flex;gap:9px;min-width:0}
+.research-shortcuts button{display:flex;align-items:center;gap:10px;padding:12px;background:var(--paper);border:1px solid #94ac9e;box-shadow:2px 2px 0 #cbd8c9;border-radius:3px;min-height:54px;text-align:left}
+.research-shortcuts strong,.research-shortcuts small{display:block}
+.research-shortcuts strong{font-size:14px;color:var(--ink)}
+.research-shortcuts small{font-size:9px;color:var(--muted);margin-top:4px}
+.research-shortcuts button:hover{background:#e1ebe1}
+.asset-tabs{min-width:0}
+.asset-tabs .asset-market-value{font-size:12px;color:var(--muted)}
+.research-badge{font-size:9px;line-height:1.3;white-space:nowrap;border:1px solid #c5c7aa;border-radius:3px;padding:3px 5px;background:#f4ecda;color:#745a2f}
+.research-badge.available{background:#e2ece0;border-color:#a5bca8;color:#365f53}
+.research-pending h3{font:25px/1.15 Georgia,serif;color:var(--ink);margin:14px 0}
+.research-pending p{font-size:12px;line-height:1.7;color:var(--muted)}
+.research-pending .fine-print{font-size:11px}
+.research-pending .text-action{margin:16px 0}
+.market-facts{margin:18px 0;border-top:1px solid var(--line)}
+.market-facts>div{display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid var(--line)}
+.market-facts dt{font-size:11px;color:var(--muted)}
+.market-facts dd{font-size:15px;color:var(--ink);margin:0}
+.research-checklist{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid #a0b29f;background:var(--paper);background-image:url('/assets/atlas-paper-v2.png')}
+.research-checklist article{padding:26px;border-right:1px solid #b8c5b2}
+.research-checklist article:last-child{border-right:0}
+.research-checklist article>span{color:#7c7557;font-size:11px;letter-spacing:.1em}
+.research-checklist h3{font:23px/1.2 Georgia,serif;color:var(--ink);margin:13px 0}
+.research-checklist p{font-size:13px;line-height:1.7;color:var(--muted)}
+.research-library-controls{display:grid;gap:9px;min-width:0;max-width:460px}
+.research-library-controls>label{font-size:11px;color:var(--muted)}
+.research-library-controls>select{width:100%;min-height:40px;max-width:100%}
+.evidence-dossier .section-heading{align-items:flex-start}
+.evidence-dossier .section-heading>div:first-child{max-width:70ch}
+.evidence-dossier .segmented{flex-shrink:0}
+.evidence-dossier .segmented button{display:flex;gap:6px;align-items:center;white-space:nowrap}
+.dossier-meta{display:flex;gap:16px;align-items:center;flex-wrap:wrap;font-size:11px;color:var(--muted);margin:-7px 0 22px}
+.status-chip.partial-evidence{background:#f4e6ce;border:1px solid #c6a36e;color:#6c4a1b}
+.dossier-graph .chart{height:390px}
+.dossier-graph-note{font-size:10px;line-height:1.6;padding:0 16px 15px;min-width:0;max-width:75ch;color:var(--muted)}
+.claim-source{border-top:1px solid #bac7b5;margin-top:18px;padding-top:16px}
+.claim-source a{display:flex;align-items:flex-start;gap:7px;font-size:13px}
+.claim-source a svg{flex-shrink:0;margin-top:3px}
+.claim-source p{font-size:10px;line-height:1.8;margin:8px 0;color:var(--muted)}
+.evidence-matrix{max-width:100%;max-height:none;overflow:auto;background:var(--paper);border:1px solid #bac7b5}
+.evidence-matrix table{min-width:710px;width:100%;font-size:12px}
+.evidence-matrix caption{text-align:left;padding:16px;font-size:13px;color:var(--ink)}
+.evidence-matrix th,.evidence-matrix td{text-align:left;vertical-align:top;padding:18px}
+.evidence-matrix thead th:not(:first-child){text-align:left}
+.evidence-matrix th{width:18%}
+.evidence-matrix td:nth-child(2){width:48%}
+.evidence-matrix td p{font-size:12px;line-height:1.7;margin:8px 0 0;color:var(--muted)}
+.evidence-matrix td>a,.evidence-matrix td>small{display:block;margin-top:10px}
+.evidence-matrix td>small{color:var(--muted);font-size:10px;line-height:1.6}
+.dossier-gaps{margin-top:22px;border-top:1px solid #bac7b5;padding-top:16px;font-size:12px;color:var(--muted)}
+.dossier-gaps summary{cursor:pointer;color:var(--ink);padding:8px 0}
+.dossier-gaps ul{padding-left:20px;margin-top:10px;line-height:1.8}
+.research-downloads{display:flex;gap:20px;flex-wrap:wrap;margin-top:16px;font-size:11px}
+.evidence-dossier .graph-explanation h3{overflow-wrap:anywhere;line-height:1.17}
+@media(max-width:1100px){.research-library-controls{max-width:100%}.evidence-dossier .section-heading{display:block}.evidence-dossier .segmented{display:inline-flex;margin-top:16px}}
+@media(max-width:680px){.research-library-controls>select{font-size:12px}.dossier-meta{gap:9px;font-size:10px;margin-top:0}.dossier-graph .chart{height:365px}.evidence-dossier .graph-explanation{padding-top:22px}.evidence-matrix th,.evidence-matrix td{padding:14px}}
+@media(max-width:1100px){.research-coverage{grid-template-columns:1fr;gap:18px}.research-shortcuts{flex-wrap:wrap}.research-shortcuts button{flex:1}}
+@media(max-width:680px){.research-coverage{padding:22px 16px;gap:16px}.research-coverage h2{font-size:25px}.research-shortcuts{gap:7px}.research-shortcuts button{padding:10px 8px;gap:5px}.research-shortcuts button>svg{display:none}.research-shortcuts strong{font-size:14px}.research-shortcuts small{font-size:9px}.asset-tabs .asset-market-value{display:none}.asset-tabs button{flex-wrap:wrap;max-width:125px;justify-content:center;gap:5px}.research-badge{font-size:8px}.research-checklist{grid-template-columns:1fr}.research-checklist article{border-right:0;border-bottom:1px solid #b8c5b2;padding:22px}.research-checklist article:last-child{border-bottom:0}}
