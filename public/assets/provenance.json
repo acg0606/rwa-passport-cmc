@@ -1,0 +1,8 @@
+{
+  "countries.geojson": {
+    "source": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson",
+    "license": "Public domain",
+    "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/"
+  },
+  "globe": "Three.js geometry with a solid ocean material. No satellite texture."
+}
