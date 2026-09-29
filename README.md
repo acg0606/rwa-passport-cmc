@@ -9,9 +9,15 @@ RWA Passport joins CoinMarketCap market observations to source-backed research a
 - [API code and response](https://rwa-passport-cmc.kalmon4ever.chatgpt.site/api-proof.html)
 - [Sanitized, uncached provider receipt](public/evidence/cmc-live.json)
 
+## Illustrated atlas update — 29 September 2026
+
+The explorer edition brings the project artwork into the working interface: an illustrated cover, paper surfaces, ink-framed controls, an evidence diagram and history charts in one shared palette. All map selections, source links, category rankings, unknown states and history controls remain real interactive components. The decorative landscape is AI-generated imaginary geography, separate from the Natural Earth basemap and attributed research.
+
+The public app keeps the same URL. The 67-second video documents the original interface and the same core interactions. The current interactive app shows the updated visual edition.
+
 ## Try it
 
-1. Open PAXG and inspect its declared London custody region and issuer sources.
+1. Select **Explore the atlas**, then open PAXG and inspect its declared London custody region and issuer sources.
 2. Switch to Origin & production. The globe now shows USGS gold production, explicitly separated from the origin of token reserves.
 3. Open Structure and select relationship nodes to inspect their meaning and source.
 4. Open History, play the 2023–2025 production series, choose a year manually or open the numeric table.
@@ -64,4 +70,4 @@ CMC's stable IDs, category membership and quote timestamps made an explainable m
 
 ## Attribution
 
-Code: MIT, see LICENSE. Country boundaries: Natural Earth, public domain; see THIRD_PARTY_NOTICES.md. The globe uses generated geometry and a solid ocean material, not satellite imagery. Inter font license is included with its bundled files. The gold ingot is an AI-generated illustration and is never evidence of reserves. No third-party logos are used.
+Code: MIT, see LICENSE. Country boundaries: Natural Earth, public domain; see THIRD_PARTY_NOTICES.md. The globe uses generated geometry and a solid ocean material, not satellite imagery. Inter font license is included with its bundled files. The gold ingot is an AI-generated illustration and is never evidence of reserves. No third-party logos are used. The illustrated landscape and paper surfaces are AI-generated for this project; their prompt, source reference and limitations are documented alongside the assets. Georgia is a system serif font; all charts and numerical UI retain Inter for legibility.

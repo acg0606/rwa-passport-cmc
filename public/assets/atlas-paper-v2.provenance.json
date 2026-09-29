@@ -1,0 +1,30 @@
+{
+  "asset": "atlas-paper-v2.png",
+  "title": "RWA Passport ivory atlas paper material",
+  "createdAt": "2026-09-29T12:33:53.3892446Z",
+  "generationMode": "built-in image_gen tool",
+  "generationIntent": "new restrained decorative material swatch derived from user-approved palette and paper character",
+  "reference": "outputs/rwa-passport-cmc-x-moebius.png",
+  "referenceRole": "palette and print texture only",
+  "generatedSource": "exec-f2379a60-00a6-44a8-a201-00a74a660f34.png",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "format": "PNG",
+  "bytes": 2240502,
+  "sha256": "90e6ca378dd30b40900f842fa642574bd2d560bab378494e24a1f5e909d4611b",
+  "disclosure": "AI-generated decorative paper texture. Contains no factual data or evidence.",
+  "displayGuidance": "Subtle decorative background for real HTML controls and real diagram/chart panels. Preserve text contrast and accessible focus states. Use CSS backgrounds rather than meaningful image content. No third-party endorsement is implied.",
+  "prompt": "Use case: stylized-concept\nAsset type: quiet material texture swatch for real web UI controls, diagram panels and chart backgrounds.\nInput image 1: palette and paper-print texture reference ONLY. Do not reproduce its illustrated scene, type, screenshots, interface or composition.\nPrimary request: one high-resolution cream/ivory paper material swatch, 3:2 landscape, ideally 1536 x 1024. It must look like the clean light stock used for the user-approved RWA Passport sci-fi atlas artwork, while remaining almost plain enough to serve as the background behind small real HTML text and source-linked charts.\nTexture: very subtle fine natural paper fibers and whisper-light print grain. Base is warm near-white ivory, approximately #FBF8EE, with sparse tiny muted sand and extremely pale turquoise ink flecks. Keep flecks extremely fine, soft, low contrast and infrequent. Visually calm, refined and unobtrusive. Even material across the entire image including edges, no directional light or strong central feature.\nComposition: perfectly flat evenly lit orthographic material scan, full-bleed, opaque, no margins. Restrained low variation and very high overall lightness. Small text will be rendered separately by the app; legibility must dominate.\nABSOLUTELY NO illustrated landscape, character, map, line drawing, glyph, symbol, letter, numeral, typography, UI, chart, diagram, data, badge, logo, signature, watermark, frame, border, seam, fold, page edge, torn edge, burn, stain, dark speck, vignette, shadow or gradient. No objects of any kind. Only the soft cream paper surface. This is a MATERIAL SWATCH, not another scene or a poster.",
+  "visualQA": {
+    "inspected": true,
+    "result": "PASS",
+    "observations": [
+      "Light warm ivory base, even illumination, very subtle fine fiber and grain.",
+      "Sparse very pale turquoise and sand flecks, low visual contrast.",
+      "No landscape, drawings, text, numerals, logos, watermark, UI, charts, borders or frames.",
+      "Opaque full-bleed material swatch suitable beneath dark real UI labels."
+    ]
+  }
+}

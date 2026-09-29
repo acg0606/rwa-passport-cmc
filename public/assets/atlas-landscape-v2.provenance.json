@@ -1,0 +1,32 @@
+{
+  "asset": "atlas-landscape-v2.png",
+  "title": "RWA Passport atlas landscape",
+  "createdAt": "2026-09-29T12:31:10.89168Z",
+  "generationMode": "built-in image_gen tool",
+  "generationIntent": "new decorative illustration derived from user-approved visual reference",
+  "reference": "outputs/rwa-passport-cmc-x-moebius.png",
+  "referenceRole": "aesthetic and world reference only",
+  "generatedSource": "exec-b1e4aff0-af30-4ea4-bf1e-c7c3a4ea94cf.png",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "format": "PNG",
+  "bytes": 3270448,
+  "sha256": "c01287553075134fc956165027f849cca6e50079d3d7002153be40dc73f5b112",
+  "disclosure": "AI-generated decorative imaginary landscape. It is not real geography, a map of physical assets, custody evidence or market data.",
+  "displayGuidance": "Use as decorative hero artwork with empty alt text when adjacent copy conveys the context. Render real copy, controls, charts and data as HTML/SVG independently. The composition tolerates a mild vertical crop to 720:440. Do not imply an endorsement by Moebius or any third party.",
+  "prompt": "Use case: stylized-concept\nAsset type: production raster hero illustration for the RWA Passport web app, displayed beside real HTML copy in a roughly 720 x 440 panel.\nInput image 1 is a STYLE AND WORLD REFERENCE ONLY: the user-approved RWA Passport poster. Create a new, clean, complete landscape illustration in the same visual world; do not create a poster, mockup, or UI screenshot.\n\nPrimary request: a beautiful original Moebius-inspired science-fiction atlas landscape, with delicate dark blue-black ligne claire ink contours, restrained fine hatching, warm cream parchment, pastel turquoise, pale dusty lavender, muted desert gold, and airy editorial simplicity. Preserve the reference's recognizable lone cartographer and vast rocky world.\nScene: a lone explorer-cartographer on a foreground rocky ledge at lower-left, seen in a three-quarter back view, wearing a pale sand trench coat and a muted turquoise expedition backpack, studying a folded blank atlas/map with no visible marks. The explorer is relatively small, approximately one fifth of image height. Beyond is a wide, serene desert valley, pale turquoise meandering water, lavender mesas and slender mineral outcrops. A refined domed observatory stands on a distant cliff at right-of-center. A soft muted gold sun hangs above a far horizon. Large spacious cream sky; fine gentle clouds are optional. Quiet sense of wonder and thoughtful exploration.\nComposition: high-resolution landscape about 3:2, ideally 1536 x 1024. Full-bleed illustration, no frame or border. Keep the cartographer's entire body, backpack, map and feet visible, at least 6 percent inside the image edges. Allow the image to crop slightly vertically to fit a 720 x 440 web panel without losing the cartographer or observatory. Layered depth from dark turquoise foreground rocks to pale distant lavender ranges. Balanced full composition with generous breathing room and safe margins.\nMaterials/finish: crisp fine ink lines, softly printed pastel color, very subtle paper grain, clean enough for a premium web app. Match the lightness and sophistication of the approved reference. No heavy contrast, photorealism, 3D rendering, glossy fintech aesthetic, neon, or dramatic lens flare.\nText: NONE. Absolutely no letters, numerals, labels, handwriting, symbols, logos, signatures, watermarks, title, hashtag, UI, charts, graphs, data, interface panels, embedded screens, white screenshot rectangles, framed cards, badges, coins, currency, or financial icons. This must contain only the illustration. The map has no visible markings.\nThis is a decorative imaginary landscape, not real geography or factual asset/custody evidence. Opaque background.",
+  "visualQA": {
+    "inspected": true,
+    "result": "PASS",
+    "observations": [
+      "Complete lone cartographer visible at lower-left, studying an illustrated atlas.",
+      "Delicate ink outlines, cream, turquoise, dusty lavender and muted gold match the approved visual direction.",
+      "Observatory and broad imaginary landscape create depth without interface panels.",
+      "No readable text, numbers, logos, watermark, UI, charts or data panels.",
+      "Illustrated map contains fine geographical linework; it is decorative and not factual geography.",
+      "Opaque full-bleed landscape with safe subject margins."
+    ]
+  }
+}

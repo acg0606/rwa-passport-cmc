@@ -4,5 +4,15 @@
     "license": "Public domain",
     "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/"
   },
-  "globe": "Three.js geometry with a solid ocean material. No satellite texture."
+  "globe": "Three.js geometry with a solid ocean material. No satellite texture.",
+  "atlas-landscape-v2.png": {
+    "type": "AI-generated decorative illustration",
+    "evidence": false,
+    "details": "atlas-landscape-v2.provenance.json"
+  },
+  "atlas-paper-v2.png": {
+    "type": "AI-generated decorative material",
+    "evidence": false,
+    "details": "atlas-paper-v2.provenance.json"
+  }
 }

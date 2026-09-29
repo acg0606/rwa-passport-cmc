@@ -1,5 +1,8 @@
 # Asset and data attribution
 
+- Illustrated atlas landscape and paper treatment: AI-generated for RWA Passport on 2026-09-29, based on the project's own approved promotional artwork. Decorative imagined geography only; no geographic or custody evidence. See adjacent asset provenance files.
+- Display typography: Georgia / Times New Roman system fonts, not redistributed. Data and controls retain the licensed Inter files below.
+
 - Country boundaries: Natural Earth 1:110m Admin 0. Public domain: https://www.naturalearthdata.com/about/terms-of-use/ . Original GeoJSON: https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson . Borders are contextual, not a political or custodial claim.
 - Inter font: Rasmus Andersson, SIL Open Font License 1.1. License distributed in `public/assets/INTER-LICENSE.txt`.
 - Gold ingot: AI-generated, unbranded illustration created for this project on 2026-09-13. Not a photograph or reserve/custody evidence.

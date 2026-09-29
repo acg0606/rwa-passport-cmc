@@ -3,6 +3,7 @@ import {Play,Pause,ArrowSquareOut,Table,ChartBar} from '@phosphor-icons/react';
 import {Chart} from './Chart.jsx';
 import {sortRows,compareRows} from '../lib/domain.js';
 import {goldHistory} from '../data/research.js';
+import {atlasPalette as palette,atlasUiFont} from '../lib/atlas-theme.js';
 
 export function Timeline({index,onIndex,playing,onPlay,compact=false}) {
   return <div className={`timeline ${compact?'compact':''}`}>
@@ -12,7 +13,7 @@ export function Timeline({index,onIndex,playing,onPlay,compact=false}) {
 }
 export function RaceChart({frame,selected,onSelect,reducedMotion,compact=false}) {
   const rows=frame.rows;
-  const option=useMemo(()=>({animation:!reducedMotion,animationDuration:450,animationDurationUpdate:800,animationEasingUpdate:'cubicOut',aria:{enabled:true},grid:{left:compact?93:122,right:compact?44:72,top:12,bottom:12},xAxis:{type:'value',max:400,show:false},yAxis:{type:'category',inverse:true,max:compact?4:9,data:rows.map(r=>r.name),axisLine:{show:false},axisTick:{show:false},axisLabel:{color:'#616e85',fontFamily:'Inter',fontSize:compact?12:14}},tooltip:{trigger:'item',renderMode:'richText',formatter:p=>`${p.name}: ${p.value} metric tonnes\nUSGS ${frame.year}${frame.year===2025?' estimate':''}`},series:[{id:'gold-production',type:'bar',realtimeSort:true,barWidth:compact?10:19,itemStyle:{borderRadius:2},label:{show:true,position:'right',color:'#0d1421',fontFamily:'Inter',fontSize:compact?12:14,valueAnimation:!reducedMotion},data:rows.map(r=>({id:r.id,name:r.name,value:r.value,itemStyle:{color:r.id===selected?'#b98822':'#3861fb'}}))}]}),[frame,selected,reducedMotion,compact]);
+  const option=useMemo(()=>({animation:!reducedMotion,animationDuration:450,animationDurationUpdate:800,animationEasingUpdate:'cubicOut',aria:{enabled:true},grid:{left:compact?93:122,right:compact?44:72,top:12,bottom:12},xAxis:{type:'value',max:400,show:false},yAxis:{type:'category',inverse:true,max:compact?4:9,data:rows.map(r=>r.name),axisLine:{show:false},axisTick:{show:false},axisLabel:{color:palette.muted,fontFamily:atlasUiFont,fontSize:compact?12:14}},tooltip:{trigger:'item',renderMode:'richText',formatter:p=>`${p.name}: ${p.value} metric tonnes\nUSGS ${frame.year}${frame.year===2025?' estimate':''}`},series:[{id:'gold-production',type:'bar',realtimeSort:true,barWidth:compact?10:19,itemStyle:{borderRadius:2,borderColor:'#24545c',borderWidth:1},label:{show:true,position:'right',color:palette.ink,fontFamily:atlasUiFont,fontSize:compact?12:14,valueAnimation:!reducedMotion},data:rows.map(r=>({id:r.id,name:r.name,value:r.value,itemStyle:{color:r.id===selected?palette.gold:palette.teal}}))}]}),[frame,selected,reducedMotion,compact]);
   return <Chart className={compact?'race-chart compact':'race-chart'} option={option} onSelect={p=>onSelect(p.data.id)} label={`Gold mine production by country in ${frame.year}, measured in metric tonnes. Numeric values are also provided in the location list and analysis table.`}/>;
 }
 export default function History({asset,index,onIndex,playing,onPlay,selected,onSelect,reducedMotion,market,onShowWorld}) {

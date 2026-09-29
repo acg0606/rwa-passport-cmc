@@ -1,11 +1,12 @@
 import { useEffect,useRef,useState,useMemo } from 'react';
 import Globe from 'react-globe.gl';
 import {MeshPhongMaterial} from 'three';
+import {atlasPalette as palette} from '../lib/atlas-theme.js';
 import { GlobeHemisphereWest,Minus,Plus,Crosshair,ArrowClockwise } from '@phosphor-icons/react';
 
 export default function World({context,selected,onSelect,trade,focusRequest,reducedMotion}) {
   const globe=useRef(),wrapper=useRef(),[size,setSize]=useState({width:800,height:700}),[geo,setGeo]=useState([]),[failed,setFailed]=useState(false),[ready,setReady]=useState(false),[orbit,setOrbit]=useState(false);
-  const material=useMemo(()=>new MeshPhongMaterial({color:'#153c5b'}),[]);
+  const material=useMemo(()=>new MeshPhongMaterial({color:palette.ocean}),[]);
   useEffect(()=>()=>material.dispose(),[material]);
   useEffect(()=>{
     const observer=new ResizeObserver(([entry])=>setSize({width:entry.contentRect.width,height:entry.contentRect.height}));
@@ -22,16 +23,16 @@ export default function World({context,selected,onSelect,trade,focusRequest,redu
   const arcs=useMemo(()=>context.kind==='trade'?points.map(p=>({startLat:p.lat,startLng:p.lng,endLat:trade.destination.lat,endLng:trade.destination.lng,...p})):[],[context,trade]);
   const capColor=feature=>{
     const point=findPoint(feature);
-    if(!point)return 'rgba(54,91,109,0.92)';
-    if(point.id===selected)return 'rgba(248,209,108,0.85)';
+    if(!point)return 'rgba(86,132,137,0.96)';
+    if(point.id===selected)return 'rgba(226,185,110,0.98)';
     return `rgba(218,167,64,${context.kind==='qualitative'?.32:Math.min(.72,.18+(point.share??point.value/3)/22)})`;
   };
   const labels=points.filter(p=>p.id===selected||context.kind==='qualitative');
   return <div className="world" ref={wrapper}>
-    {!failed && <Globe ref={globe} width={size.width} height={size.height} backgroundColor="#f8fafd"
-      globeMaterial={material} showAtmosphere atmosphereColor="#bdcbe1" atmosphereAltitude={.035}
+    {!failed && <Globe ref={globe} width={size.width} height={size.height} backgroundColor="#f2eddf"
+      globeMaterial={material} showAtmosphere atmosphereColor="#becfc4" atmosphereAltitude={.035}
       polygonsData={geo} polygonAltitude={feature=>findPoint(feature)?.id===selected ? .009 : .003}
-      polygonCapColor={capColor} polygonSideColor={()=>'rgba(239,193,83,0.18)'} polygonStrokeColor={feature=>findPoint(feature)?'#ddb964':'rgba(153,190,205,.17)'}
+      polygonCapColor={capColor} polygonSideColor={()=>'rgba(239,193,83,0.18)'} polygonStrokeColor={feature=>findPoint(feature)?'#ddb964':'rgba(206,223,208,.34)'}
       polygonLabel={feature=>{const p=findPoint(feature);return p?`${p.name}: ${p.value==null?'declared location, not a stock quantity':`${p.value.toLocaleString('en-US')} ${context.unit}`}`:`${feature.properties.ADMIN}: no data in this layer`;}}
       onPolygonClick={feature=>{const point=findPoint(feature);if(point)onSelect(point.id);}}
       pointsData={points} pointLat="lat" pointLng="lng" pointAltitude={.016} pointRadius={p=>p.id===selected ? .42 : .2} pointColor={()=>'#f6d58a'} onPointClick={p=>onSelect(p.id)}
