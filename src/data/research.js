@@ -45,7 +45,7 @@ export const passports = [
     custody:{id:'GBR',name:'London region',country:'United Kingdom',lat:51.5,lng:-0.1,precision:'Region only',statement:'Paxos states that PAXG gold is stored in LBMA vaults in London. Exact vault addresses and regional balances are not provided here.',source:'https://www.paxos.com/pax-gold',sourceDate:null},
     sources:[
       {id:'paxg-overview',label:'Pax Gold overview',publisher:'Paxos',url:'https://www.paxos.com/pax-gold',kind:'Issuer statement',claim:'Allocated gold and declared London custody region.'},
-      {id:'paxg-reports',label:'Reserve attestations',publisher:'Paxos',url:'https://www.paxos.com/transparency',kind:'Evidence gateway',claim:'Official reporting portal. This app has not audited every report.'},
+      {id:'paxg-reports',label:'Reserve attestations',publisher:'Paxos',url:'https://www.paxos.com/paxg-transparency',kind:'Evidence gateway',claim:'Official reporting portal. This app has not audited every report.'},
       {id:'paxg-cmc',label:'Market listings',publisher:'CoinMarketCap',url:'https://coinmarketcap.com/currencies/pax-gold/#Markets',kind:'Market directory',claim:'Listed venues are not the location of the gold or of every buyer.'},
     ],
     events:[{date:'2026-09-13',title:'London custody statement reviewed',summary:'The current issuer page states the custody region. A statement is not an independent verification of reserves.',url:'https://www.paxos.com/pax-gold',kind:'Research checkpoint'}],
